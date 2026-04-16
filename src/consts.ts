@@ -9,7 +9,6 @@ export const NAVIGATION = [
   { label: "Inicio", url: "/" },
   { label: "Sobre mí", url: "/about" },
   { label: "Blog", url: "/blog" },
-  { label: "Contacto", url: "#contact" },
 ];
 
 export const SOCIALS = [
