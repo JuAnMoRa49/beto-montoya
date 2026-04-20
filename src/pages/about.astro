@@ -1,63 +1,152 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import GeneralLayout from "../layouts/GeneralLayout.astro";
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<GeneralLayout title="Sobre Mí | Trayectoria y Filosofía">
+  <main class="pt-20">
+    <section class="bg-primary text-white py-24 px-4">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1
+            class="text-5xl md:text-7xl font-black uppercase leading-tight mb-6"
+          >
+            Más que un <span class="text-secondary">Jugador</span>
+          </h1>
+          <p class="text-gray text-xl max-w-md leading-relaxed">
+            Descubre el camino, la disciplina y la pasión que me han llevado
+            desde mis primeros golpes hasta las pistas más exigentes del mundo.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white/5 p-6 border-l-4 border-secondary">
+            <span class="block text-3xl font-bold text-secondary">15+</span>
+            <span class="text-xs uppercase tracking-widest text-gray"
+              >Años de experiencia</span
+            >
+          </div>
+          <div class="bg-white/5 p-6 border-l-4 border-white">
+            <span class="block text-3xl font-bold text-white">200+</span>
+            <span class="text-xs uppercase tracking-widest text-gray"
+              >Partidos Pro</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+    <section class="py-24 px-4 bg-white text-black">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-primary text-3xl font-black uppercase mb-12 flex items-center gap-4"
+        >
+          Mi Historia <div class="h-1 flex-grow bg-gray/20"></div>
+        </h2>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+        <div class="space-y-12 text-lg text-gray-700 leading-relaxed">
+          <p>
+            Mi relación con la pala comenzó en mi ciudad natal, donde lo que
+            empezó como un hobby de fin de semana pronto se convirtió en una
+            obsesión por la perfección técnica y táctica. A los 16 años, decidí
+            que mi oficina sería una pista de 20x10.
+          </p>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+          <div
+            class="relative p-8 bg-primary text-white italic border-r-8 border-secondary"
+          >
+            "El pádel no se gana solo con el brazo; se gana con la cabeza y el
+            corazón. Cada punto es una partida de ajedrez a 120 pulsaciones por
+            minuto."
+          </div>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+          <p>
+            Tras años de formación intensiva y competición en circuitos
+            regionales, di el salto al circuito profesional. Hoy, mi enfoque se
+            centra en la **constancia, el análisis de datos y la preparación
+            física integral** para mantenerme en la vanguardia del deporte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="group p-8 border border-gray/30 hover:border-secondary transition-colors"
+          >
+            <div
+              class="text-secondary text-5xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity"
+            >
+              01
+            </div>
+            <h3
+              class="text-white text-xl font-bold uppercase mb-4 text-secondary"
+            >
+              Disciplina
+            </h3>
+            <p class="text-gray leading-relaxed">
+              Entrenamientos invisibles, nutrición y descanso. La excelencia es
+              un hábito diario, no un acto aislado.
+            </p>
+          </div>
+
+          <div
+            class="group p-8 border border-gray/30 hover:border-secondary transition-colors"
+          >
+            <div
+              class="text-secondary text-5xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity"
+            >
+              02
+            </div>
+            <h3
+              class="text-white text-xl font-bold uppercase mb-4 text-secondary"
+            >
+              Estrategia
+            </h3>
+            <p class="text-gray leading-relaxed">
+              Analizo cada rival y cada superficie. El juego evoluciona y la
+              adaptabilidad es mi mayor ventaja en la red.
+            </p>
+          </div>
+
+          <div
+            class="group p-8 border border-gray/30 hover:border-secondary transition-colors"
+          >
+            <div
+              class="text-secondary text-5xl mb-6 font-black opacity-30 group-hover:opacity-100 transition-opacity"
+            >
+              03
+            </div>
+            <h3
+              class="text-white text-xl font-bold uppercase mb-4 text-secondary"
+            >
+              Resiliencia
+            </h3>
+            <p class="text-gray leading-relaxed">
+              En el pádel profesional, aprender de la derrota es tan crucial
+              como celebrar la victoria. Cada bola cuenta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-primary text-4xl font-black uppercase mb-8">
+          ¿Quieres trabajar conmigo?
+        </h2>
+        <p class="text-gray mb-10 text-lg">
+          Abierto a nuevas colaboraciones, patrocinios y exhibiciones clínicas
+          en todo el mundo.
+        </p>
+        <a
+          href="/contacto"
+          class="inline-block bg-secondary text-white px-10 py-4 font-bold uppercase tracking-tighter hover:bg-primary transition-all transform hover:-translate-y-1"
+        >
+          Contactar Ahora
+        </a>
+      </div>
+    </section>
+  </main>
+</GeneralLayout>

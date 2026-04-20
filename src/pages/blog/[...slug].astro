@@ -2,19 +2,24 @@
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
+// 1. Generar las rutas para cada post de la colección
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
+    const posts = await getCollection('blog');
+    return posts.map((post) => ({
+        params: { slug: post.id }, // Usamos post.id para Astro 5.0+ o post.slug en versiones anteriores
+        props: post,
+    }));
 }
+
+// 2. Definir los tipos de las Props para TypeScript
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
+
+// 3. Renderizar el contenido (Markdown/MDX a HTML)
 const { Content } = await render(post);
 ---
 
 <BlogPost {...post.data}>
-	<Content />
+    <Content />
 </BlogPost>

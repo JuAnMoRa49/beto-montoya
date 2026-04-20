@@ -3,6 +3,116 @@ import GeneralLayout from "../layouts/GeneralLayout.astro";
 ---
 
 <GeneralLayout>
-  <h1 class="text-red-900">Welcome to my Astro site!</h1>
-  <p>This is the homepage.</p>
+  <section
+    id="inicio"
+    class="relative h-screen flex items-center justify-center bg-primary overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=2070')] bg-cover bg-center"
+    >
+    </div>
+    <div class="relative z-10 text-center px-4">
+      <h2 class="text-secondary font-bold uppercase tracking-widest mb-2">
+        World Padel Tour Player
+      </h2>
+      <h1
+        class="text-white text-6xl md:text-9xl font-black uppercase leading-none"
+      >
+        Beto <br />
+        <span
+          class="text-white border-t-2 border-b-2 border-white inline-block mt-2"
+          >Montoya</span
+        >
+      </h1>
+      <p class="text-gray mt-6 max-w-lg mx-auto text-lg">
+        Dominando la pista con precisión, potencia y la elegancia del juego
+        estratégico.
+      </p>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+      <div class="w-1 h-12 bg-secondary/50 rounded-full"></div>
+    </div>
+  </section>
+
+  <section class="bg-black py-12 border-b border-gray/20">
+    <div
+      class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+    >
+      <div>
+        <p class="text-secondary text-4xl font-bold">#12</p>
+        <p class="text-gray uppercase text-xs tracking-widest mt-2">
+          Ranking Global
+        </p>
+      </div>
+      <div>
+        <p class="text-white text-4xl font-bold">85%</p>
+        <p class="text-gray uppercase text-xs tracking-widest mt-2">
+          Victorias
+        </p>
+      </div>
+      <div>
+        <p class="text-white text-4xl font-bold">15</p>
+        <p class="text-gray uppercase text-xs tracking-widest mt-2">
+          Títulos WPT
+        </p>
+      </div>
+      <div>
+        <p class="text-secondary text-4xl font-bold">Revés</p>
+        <p class="text-gray uppercase text-xs tracking-widest mt-2">Posición</p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="perfil"
+    class="py-24 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center"
+  >
+    <div class="relative group">
+      <div
+        class="absolute -inset-4 border-2 border-secondary translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"
+      >
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070"
+        alt="Jugador en acción"
+        class="relative z-10 w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition duration-700"
+      />
+    </div>
+    <div>
+      <h3
+        class="text-primary text-4xl font-bold mb-6 italic underline decoration-secondary decoration-4 underline-offset-8"
+      >
+        La mentalidad detrás del cristal.
+      </h3>
+      <div class="space-y-4 text-gray leading-relaxed text-lg">
+        <p>
+          Nacido para competir, he dedicado mi carrera a perfeccionar cada
+          bandeja, cada salida de pared y cada remate por tres.
+        </p>
+        <p>
+          Mi enfoque no es solo la potencia, sino la lectura del juego. En el
+          pádel profesional, la mente es tan importante como el brazo.
+        </p>
+      </div>
+      <button
+        class="mt-10 bg-primary text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-secondary transition-colors"
+      >
+        Ver Biografía Completa
+      </button>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 border-t border-gray/10">
+    <p class="text-center text-gray uppercase text-xs tracking-[0.3em] mb-10">
+      Trusted by world class brands
+    </p>
+    <div
+      class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 px-4"
+    >
+      <span class="text-primary font-black text-2xl">BULLPADEL</span>
+      <span class="text-primary font-black text-2xl">ADIDAS</span>
+      <span class="text-primary font-black text-2xl">HEAD</span>
+      <span class="text-primary font-black text-2xl">CUPRA</span>
+    </div>
+  </section>
 </GeneralLayout>
