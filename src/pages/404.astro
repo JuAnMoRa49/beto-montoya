@@ -1,0 +1,61 @@
+---
+import GeneralLayout from "../layouts/GeneralLayout.astro";
+---
+
+<GeneralLayout title="404 - Fuera de la Pista | Beto Montoya">
+  <section
+    class="relative h-screen flex items-center justify-center bg-white overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 flex items-center justify-center opacity-10 select-none"
+    >
+      <h1 class="text-black text-[30rem] font-black italic">404</h1>
+    </div>
+
+    <div
+      class="relative z-10 text-center px-4 flex flex-col items-center gap-8"
+    >
+      <h2
+        class="text-secondary font-bold uppercase tracking-[0.3em] mb-4 text-xl"
+      >
+        ¡Bola Fuera!
+      </h2>
+
+      <h1
+        class="text-primary text-6xl md:text-8xl font-black uppercase leading-tight mb-8"
+      >
+        PÁGINA <br />
+        NO ENCONTRADA
+      </h1>
+
+      <p class="text-gray-400 max-w-md mx-auto text-lg font-light mb-12">
+        Parece que el remate se fue por tres... pero del lado equivocado. La
+        página que buscas no existe o ha sido movida.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <a
+          href="/"
+          class="bg-secondary text-primary px-10 py-4 font-bold uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-xl"
+        >
+          Volver al Inicio
+        </a>
+        <button
+          onclick="history.back()"
+          class="text-primary border-b-2 border-primary/20 pb-2 hover:border-secondary transition-colors uppercase font-bold tracking-widest text-sm"
+        >
+          Regresar a la jugada anterior
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="absolute top-1/4 right-10 w-12 h-12 bg-secondary rounded-full blur-3xl opacity-20"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 left-10 w-24 h-24 bg-secondary rounded-full blur-[100px] opacity-10"
+    >
+    </div>
+  </section>
+</GeneralLayout>
