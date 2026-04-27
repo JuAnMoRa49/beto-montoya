@@ -1,6 +1,8 @@
 ---
 import GeneralLayout from "../layouts/GeneralLayout.astro";
 import { Image } from "astro:assets";
+import mainBg from "../assets/main-hero.webp";
+import reves from "../assets/main-reves.webp";
 ---
 
 <GeneralLayout title="Beto Montoya | Pro Padel Player">
@@ -8,8 +10,8 @@ import { Image } from "astro:assets";
     id="inicio"
     class="relative h-screen flex items-center justify-center bg-primary overflow-hidden"
   >
-    <img
-      src="../../src/assets/main-hero.webp"
+    <Image
+      src={mainBg}
       alt="Fondo decorativo Beto Montoya"
       class="absolute inset-0 w-full h-full object-top object-cover opacity-30"
     />
@@ -95,8 +97,8 @@ import { Image } from "astro:assets";
       >
       </div>
       <div class="overflow-hidden relative z-10">
-        <img
-          src="../../src/assets/main-reves.webp"
+        <Image
+          src={reves}
           alt="Fondo decorativo Beto Montoya"
           class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out scale-105 hover:scale-100"
         />

@@ -1,5 +1,7 @@
 ---
 import GeneralLayout from "../layouts/GeneralLayout.astro";
+import { Image } from "astro:assets";
+import aboutBg from "../assets/about-hero.webp";
 ---
 
 <GeneralLayout title="Sobre Mí | Trayectoria y Filosofía">
@@ -35,8 +37,8 @@ import GeneralLayout from "../layouts/GeneralLayout.astro";
     </section>
 
     <section class="relative aspect-[16/7] w-full overflow-hidden">
-      <img
-        src="/src/assets/about-hero.webp"
+      <Image
+        src={aboutBg}
         alt="Jugador de pádel en pleno entrenamiento intenso, capturando el esfuerzo y la concentración"
         class="absolute inset-0 h-full w-full object-cover object-top"
       />
